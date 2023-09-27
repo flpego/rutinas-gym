@@ -60,13 +60,6 @@ nav {
   margin: 1rem 1rem;
 }
 
-.bg-image {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/images/main-bg.jpg);
-  background-size: cover;
-}
-
 .btn {
   width: auto;
   background: #fdcc00;
@@ -89,7 +82,6 @@ nav {
 
 .btn a {
   text-decoration: none;
-
 }
 a {
   font-family: "Roboto Mono", monospace;
@@ -103,6 +95,12 @@ a:hover {
   border: none;
 }
 
+hr {
+  background-color: #fc0;
+  border-color: #fdcc00;
+  height: 1px;
+  width: 70vw;
+}
 .title {
   width: 90%;
   margin: 0 auto;
@@ -169,44 +167,7 @@ a:hover {
   width: 8rem;
 }
 
-hr {
-  background-color: #fc0;
-  border-color: #fdcc00;
-  height: 1px;
-  width: 70vw;
-}
-
-/* Registrarse */
-
-/* contenedor y estilo de rutinas cards*/
-.rutinas-container {
-  display: flex;
-  margin-left: 15px;
-  height: auto;
-  text-align: center;
-}
-.rutinas-cards {
-  width: 30%;
-  height: 450px;
-  margin: 20px 10px;
-  background-color: #383120;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 10px 5px 5px black;
-}
-.rutinas-cards img {
-  object-fit: cover;
-  width: 100%;
-  height: 75%;
-}
-.rutinas-cards h4 {
-  margin: 5px;
-  padding: 5px;
-  color: #e2e2e2;
-  font-size: 16px;
-}
-
-/* movil section */
+/* Descarga la App section */
 
 .movil-container {
   text-align: center;
@@ -214,13 +175,14 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
 }
 
 .movil-bg {
   background-repeat: no-repeat;
   object-fit: cover;
   margin-left: 20px;
-  width: 80%;
+  width: 100%;
   height: max-content;
 }
 
@@ -229,7 +191,47 @@ hr {
   margin-bottom: 40px;
   width: 200px;
 }
+/* Articulos y noticias */
+.articulos {
+  margin-top: 0;
+}
 
+.articulos h2 {
+  margin-bottom: 1rem;
+}
+
+.articulos-container {
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.articulos-cards {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.articulos-cards a {
+  background-color: #383120a9;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.articulos-cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.btn-cargar {
+  margin-block: 1rem;
+}
 /* footer */
 footer {
   height: 2rem;
@@ -240,7 +242,6 @@ footer {
   padding: 0.2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* Estilos para la lista dentro del footer */
@@ -252,11 +253,6 @@ footer {
 .footer-list li {
   padding: 5px 10px;
   list-style: none;
-}
-
-.footer-list li a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 /* input submit */
@@ -387,106 +383,84 @@ input:hover {
 
 /*version movil  version movil version movil */
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   /* header */
   header {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
 
-  hr {
-    background-color: #fc0;
-    border-color: #fdcc00;
-    height: 1px;
-    width: 90%;
-  }
-
-  nav {
-    padding: 10px 5px;
-  }
   .navbar-list {
     display: flex;
     flex-direction: column;
-    width: auto;
+    align-items: center;
+    gap: 20px;
   }
-
-  .navbar-list li {
-    list-style: none;
-    margin-right: 1rem;
-    margin: 10px 0;
-  }
-
-  .navbar-list li a {
-    padding: 10px;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-
-  /* rutinas */
+  /* main, section rutinas */
 
   .rutinas-container {
-    display: flex;
-    flex-direction: column;
     width: 90%;
-    margin-left: 15px;
-    height: auto;
-    text-align: center;
+    margin: auto 1rem;
+    display: grid;
+    row-gap: 3rem;
   }
+
   .rutinas-cards {
-    height: 450px;
-    margin: 20px 10px;
     background-color: #383120;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 10px 5px 5px black;
-  }
-  .rutinas-cards img {
-    object-fit: cover;
     width: 100%;
-    height: 75%;
-  }
-  .rutinas-cards h4 {
-    margin: 5px;
-    padding: 5px;
-    color: #e2e2e2;
-    font-size: 16px;
-  }
-
-  /* footer */
-
-  footer {
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    background: #383120;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.2rem;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 0.3rem;
+    border-radius: 5vmax 10vmax 5vmax 10vmax;
+    overflow: hidden;
   }
 
-  .footer-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5px;
+  .rutinas-cards img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
   }
 
-  .footer-list li {
-    padding: 5px 10px;
-    list-style: none;
+  .rutinas-cards button {
+    position: relative;
+    bottom: 50%;
   }
 
-  .footer-list li a {
-    color: #ffffff;
-    text-decoration: none;
+  .btn-cargar {
+    margin-block: 1rem;
   }
 
-  .registrarse-section {
-    width: 80%;
+  .articulos-container {
+   display: flex;
+   flex-direction: column;
+  }
+}
+
+footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list li {
+  margin-block: 0.4rem;
+}
+
+
+@media (max-width: 720px) {
+  .rutinas-cards {
+    max-height: 500px;
+  }
+
+  .articulos-container {
+    grid-template-columns: 1fr  1fr;
+    
   }
 }
