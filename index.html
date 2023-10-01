@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>RutinasGyM.com</title>
   </head>
-  <body>
+  <body class="bg-image">
     <header>
-      <div class="logo-container flex-center">
+      <div class="logo-container ">
         <p class="logo">RutinasGyM.com</p>
       </div>
       <nav>
@@ -30,14 +30,18 @@
     </header>
     <main>
       <section>
-        <div class="bg-image">
+        <div>
           <div class="flex-center">
-            <hr>
-            <h2 class="title">
-              Regístrate gratis y recibe cada semana en tu correo las últimas
-              rutinas
-            </h2>
-            <hr>
+            <hr />
+            <div>
+              <h2 class="title">
+                Regístrate gratis y recibe cada semana en tu correo las últimas
+                rutinas
+              </h2>
+              <button class="btn flex-center"><a href="./pages/registrarse.html">Registrarse</a></button>
+            </div>
+
+            <hr />
             <h2 class="title">ULTIMOS PLANES DE ENTRENAMIENTO</h2>
           </div>
           <div class="rutinas-container">
@@ -61,12 +65,14 @@
           </div>
         </div>
       </section>
-   
+
       <div class="movil-container">
+        <hr>
+
         <h2 class="title">Descarga la App y lleva tus rutinas a todos lados</h2>
         <img src="./assets/images/bg-movil.png" class="movil-bg" />
-        <button class="btn flex-center">Descarga Gratis</button>
-        <hr>
+        <button class="btn flex-center btn-descargar">Descarga Gratis</button>
+        <hr />
       </div>
       <section class="articulos">
         <h2 class="title">ÚLTIMOS ARTÍCULOS</h2>
@@ -80,8 +86,8 @@
           </article>
           <article class="articulos-cards">
             <img
-            src="./assets/images/plancha-abs.jpg"
-            alt="persona haciendo plancha abdominal"
+              src="./assets/images/plancha-abs.jpg"
+              alt="persona haciendo plancha abdominal"
             />
             <a href="#" class="title">
               Plancha Abdominal ¿El mejor ejercicio de core?
@@ -89,8 +95,8 @@
           </article>
           <article class="articulos-cards">
             <img
-            src="./assets/images/gym.jpg"
-            alt="persona haciendo remo inclinado con barra"
+              src="./assets/images/gym.jpg"
+              alt="persona haciendo remo inclinado con barra"
             />
             <a href="#" class="title">
               ¿Como ser constante en el entrenamiento?
@@ -98,7 +104,9 @@
           </article>
         </div>
         <div>
-          <button class="btn flex-center btn-cargar"><a href="#">Cargar mas ➕</a></button>
+          <button class="btn flex-center btn-cargar">
+            <a href="#">Cargar mas ➕</a>
+          </button>
         </div>
       </section>
     </main>
