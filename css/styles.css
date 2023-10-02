@@ -27,11 +27,14 @@ section {
   width: 100%;
 }
 
-input {
+input, li, a, p {
   font-family: "Roboto Mono", monospace;
 }
 
+
+
 /* clases default */
+
 /* logo */
 .logo-container {
   width: 15%;
@@ -141,6 +144,15 @@ hr {
 .bg-image {
   background: linear-gradient(#090a07, #222222);
   background-repeat: no-repeat;
+}
+
+.text-h:hover {
+  color: #fdcc00;
+  text-shadow: #fc0 1px 0 10px;
+}
+
+.sombra {
+  box-shadow: 1px 1px 20px #383120d3;;
 }
 
 /* Descarga la App section */
