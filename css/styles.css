@@ -336,7 +336,7 @@ input:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 75vh;
   margin: 0 auto;
   width: 50%;
   padding: 4px 16px 24px 16px;
@@ -426,6 +426,11 @@ input:hover {
   margin: 1.5rem;
   border-radius: 15px;
   padding: 1rem;
+}
+
+#mensaje {
+  min-height: 200px;
+  font-size: 1rem;
 }
 
 /*version movil  version movil version movil */
