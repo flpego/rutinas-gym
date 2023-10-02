@@ -27,19 +27,31 @@ section {
   width: 100%;
 }
 
-input {
+input, li, a, p {
   font-family: "Roboto Mono", monospace;
 }
 
+
+
 /* clases default */
 
+/* logo */
 .logo-container {
-  width: 40%;
+  width: 15%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  color: #fdcc00;
+  font-size: 1rem;
+  text-shadow: #fc0 1px 0 10px;
+  padding-block: 0.6rem;
 }
 
 nav {
   padding: 10px 5px;
-  width: 60%;
+  width: auto;
 }
 .navbar-list {
   display: flex;
@@ -60,36 +72,32 @@ nav {
   margin: 1rem 1rem;
 }
 
-.bg-image {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/images/main-bg.jpg);
-  background-size: cover;
-}
-
 .btn {
   width: auto;
-  background: #fdcc00;
-  font-size: 1rem;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(255, 225, 104), #fdca00f8);
+  color: #090a07;
+  font-size: 0.9rem;
   padding: 0.5rem 0.8rem;
   border-radius: 100vmax;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, color 0.1s, border 0.3s;
+  transition: background 0.9s, color 0.1s, border 0.3s;
   font-family: "Roboto Mono", monospace;
+  font-weight: 700;
   outline: none;
 }
 
 .btn:hover {
   color: #fc0;
-  background-color: #090a07;
-  border: 1px solid #fdcc00;
+  background: linear-gradient(#090a07, #383120);
   box-shadow: 0rem 0rem 0.5rem #fdcc00;
 }
 
 .btn a {
   text-decoration: none;
-
+  color: #090a07;
+  font-weight: 700;
 }
 a {
   font-family: "Roboto Mono", monospace;
@@ -101,14 +109,21 @@ a {
 a:hover {
   color: #fdcc00;
   border: none;
+  text-shadow: #fc0 1px 0 10px;
 }
 
+hr {
+  background-color: #fc0;
+  border-color: #fdcc00;
+  height: 1px;
+  width: 70vw;
+}
 .title {
   width: 90%;
   margin: 0 auto;
   height: fit-content;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -122,24 +137,29 @@ a:hover {
   align-items: center;
   justify-content: center;
   max-width: 768px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 10px;
 }
 
-.logo-container {
-  width: 40%;
+.bg-image {
+  background: linear-gradient(#090a07, #222222);
+  background-repeat: no-repeat;
 }
 
-.logo {
-  width: 100%;
-  height: 100%;
+.text-h:hover {
   color: #fdcc00;
-  font-size: 1rem;
   text-shadow: #fc0 1px 0 10px;
 }
 
+.sombra {
+  box-shadow: 1px 1px 20px #383120d3;;
+}
+
+/* Descarga la App section */
+
 .movil-container {
   text-align: center;
+  margin-top: 3rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -149,15 +169,52 @@ a:hover {
 .movil-bg {
   background-repeat: no-repeat;
   object-fit: cover;
-  margin-left: 20px;
-  width: 80%;
+  margin: auto;
+  width: 100%;
   height: max-content;
+  z-index: -1;
 }
 
-.movil-container button {
+.btn-descargar {
+  position: relative;
   align-items: center;
   margin-bottom: 40px;
-  width: 200px;
+}
+
+/* rutinas */
+.rutinas-container {
+  display: flex;
+  gap: 20px;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.rutinas-cards {
+  max-height: 500px;
+  width: 33%;
+  text-align: center;
+  background-color: #383120;
+  border-radius: 5vmax 5vmax 1vmax 1vmax;
+  overflow: hidden;
+  box-shadow: 1px 1px 30px #383120;
+  border-bottom: #090a07;
+  border-width: thin;
+  border-style: groove;
+  border-color: #383120;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.rutinas-cards img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.rutinas-cards h4 {
+  color: #b7bcc4;
 }
 
 .rutinas-cards:hover {
@@ -169,78 +226,67 @@ a:hover {
   width: 8rem;
 }
 
-hr {
-  background-color: #fc0;
-  border-color: #fdcc00;
-  height: 1px;
-  width: 70vw;
+/* Articulos y noticias */
+.articulos {
+  margin-top: 0;
 }
 
-/* Registrarse */
+.articulos h2 {
+  margin-bottom: 1rem;
+}
 
-/* contenedor y estilo de rutinas cards*/
-.rutinas-container {
-  display: flex;
-  margin-left: 15px;
-  height: auto;
-  text-align: center;
+.articulos-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
-.rutinas-cards {
-  width: 30%;
-  height: 450px;
-  margin: 20px 10px;
-  background-color: #383120;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 10px 5px 5px black;
-}
-.rutinas-cards img {
-  object-fit: cover;
+
+.articulos-cards {
   width: 100%;
-  height: 75%;
-}
-.rutinas-cards h4 {
-  margin: 5px;
-  padding: 5px;
-  color: #e2e2e2;
-  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2vmax;
 }
 
-/* movil section */
+.articulos-cards:hover {
+  transform: scale(1.02);
+  box-shadow: 0rem 0rem 1rem #fdcc00;
+}
 
-.movil-container {
-  text-align: center;
+.articulos-cards a {
+  background-color: #383120a9;
+  width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
 }
 
-.movil-bg {
-  background-repeat: no-repeat;
+.articulos-cards img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-left: 20px;
-  width: 80%;
-  height: max-content;
+  object-position: center;
 }
-
-.movil-container button {
-  align-items: center;
-  margin-bottom: 40px;
-  width: 200px;
+.btn-cargar {
+  margin-block: 1rem;
 }
-
 /* footer */
 footer {
-  height: 2rem;
   width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  margin-top: 1rem;
   background: #383120;
   color: #ffffff;
   text-align: center;
-  padding: 0.2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 /* Estilos para la lista dentro del footer */
@@ -252,11 +298,6 @@ footer {
 .footer-list li {
   padding: 5px 10px;
   list-style: none;
-}
-
-.footer-list li a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 /* input submit */
@@ -286,17 +327,19 @@ input:hover {
   box-shadow: 0rem 0rem 0.5rem #fdcc00;
 }
 
+.main-registrarse {
+  min-height: 100vh;
+}
+
 .registrarse-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  min-height: 90vh;
+  margin: 0 auto;
   width: 50%;
-  height: auto;
   padding: 4px 16px 24px 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50px 0 50px 0;
   background-color: #090a07d0;
   box-shadow: 10px 8px 8px black;
@@ -387,106 +430,109 @@ input:hover {
 
 /*version movil  version movil version movil */
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   /* header */
   header {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    background-color: #383120;
   }
 
-  hr {
-    background-color: #fc0;
-    border-color: #fdcc00;
-    height: 1px;
-    width: 90%;
+  .logo-container {
+    width: 100%;
+    text-align: center;
   }
 
-  nav {
-    padding: 10px 5px;
-  }
   .navbar-list {
     display: flex;
     flex-direction: column;
-    width: auto;
+    align-items: center;
+    gap: 20px;
   }
-
-  .navbar-list li {
-    list-style: none;
-    margin-right: 1rem;
-    margin: 10px 0;
-  }
-
-  .navbar-list li a {
-    padding: 10px;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-
-  /* rutinas */
+  /* main, section rutinas */
 
   .rutinas-container {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 15px;
-    height: auto;
-    text-align: center;
-  }
-  .rutinas-cards {
-    height: 450px;
-    margin: 20px 10px;
-    background-color: #383120;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 10px 5px 5px black;
-  }
-  .rutinas-cards img {
-    object-fit: cover;
     width: 100%;
-    height: 75%;
-  }
-  .rutinas-cards h4 {
-    margin: 5px;
-    padding: 5px;
-    color: #e2e2e2;
-    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  /* footer */
+  .rutinas-cards {
+    background-color: #383120;
+    width: 100%;
+    height: auto;
+    font-size: 0.7rem;
+  }
+
+  .rutinas-cards img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .btn-cargar {
+    margin-block: 1rem;
+  }
+
+  .movil-bg {
+    width: 95%;
+  }
+
+  .articulos-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articulos-cards a {
+    top: 50%;
+  }
 
   footer {
     height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    background: #383120;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
   }
-
   .footer-list {
     display: flex;
     flex-direction: column;
-    padding: 0.5px;
   }
 
   .footer-list li {
-    padding: 5px 10px;
-    list-style: none;
+    margin-block: 0.4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer-list li a {
-    color: #ffffff;
-    text-decoration: none;
+  footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
   }
 
-  .registrarse-section {
-    width: 80%;
+  .rutinas-container {
+    flex-wrap: wrap;
+  }
+
+  .rutinas-cards {
+    max-height: 400px;
+    width: 45%;
+  }
+
+  .rutinas-cards img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .articulos-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
