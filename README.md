@@ -13,6 +13,7 @@ El siguiente repositorio contiene el codigo en html y css necesario para visuali
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
+   
 git clone https://github.com/flpego/rutinas-gym
 
 1. O, accede al siguiente link para visualizar el sitio web:
