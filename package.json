@@ -1,0 +1,11 @@
+{
+  "name": "rutinas-gym",
+  "version": "1.0.0",
+  "description": "El siguiente repositorio contiene el codigo en html y css necesario para visualizar el front de un sitio web sobre rutianas de gimnasio. Es un sitio puramente visual, donde la interaccion se limita a la navegacion por las paginas y a algunas animaciones en links, botones y cards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
