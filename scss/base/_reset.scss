@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    border: none;
+}
+
+a {
+    color: $font-color-primary;
+    border: none;
+    text-decoration: none;
+}
+
