@@ -1,0 +1,21 @@
+
+
+.rutinas-container{
+    @include d-flex(row, wrap, center, center, 1rem);
+    margin-block: 2rem;
+    .rutinas-cards{
+        background-color: $bg-color-secondary;
+        @include card(30%, 450px, 30px, 100%, 75%, cover);
+
+        h4{
+            max-width: 90%;
+            height: 3.5rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        &:hover {
+            scale: 1.02;
+            box-shadow: 0rem 0rem .9rem #fdcc00;
+        }
+    }
+}

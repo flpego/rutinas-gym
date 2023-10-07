@@ -26,6 +26,7 @@ header {
 }
 header .logo-container {
   width: 15%;
+  flex-shrink: 2;
 }
 header .logo-container .logo {
   width: 100%;
@@ -65,8 +66,9 @@ body {
 /*media*/
 /*_components*/
 .btn {
+  display: flex;
   width: auto;
-  margin-bottom: 10px;
+  margin: auto;
   background: linear-gradient(rgb(245, 223, 135), #fcc900);
   color: #090a07;
   font-size: 0.9rem;
@@ -90,6 +92,7 @@ body {
 .btn:hover {
   background: linear-gradient(#090a07, #383120);
   box-shadow: 0rem 0rem 0.5rem #fdcc00;
+  color: rgba(255, 255, 255, 0.952);
 }
 .btn:hover a {
   color: rgba(255, 255, 255, 0.952);
@@ -106,6 +109,51 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding-block: 1rem;
+}
+
+.rutinas-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+.rutinas-container .rutinas-cards {
+  background-color: #383120;
+  width: 30%;
+  height: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.rutinas-container .rutinas-cards img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+.rutinas-container .rutinas-cards h4 {
+  max-width: 90%;
+  height: 3.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rutinas-container .rutinas-cards:hover {
+  scale: 1.02;
+  box-shadow: 0rem 0rem 0.9rem #fdcc00;
+}
+
+.hr-container {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+}
+.hr-container hr {
+  background-color: #fc0;
+  border-color: #fdcc00;
+  height: 1px;
+  width: 70vw;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

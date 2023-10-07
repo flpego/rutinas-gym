@@ -1,6 +1,7 @@
 .btn {
+    display: flex;
     width: auto;
-    margin-bottom: 10px;
+    margin: auto;
     background: linear-gradient(rgb(245, 223, 135), #fcc900);
     color: #090a07;
     font-size: 0.9rem;
@@ -26,9 +27,12 @@
     &:hover {
         background: linear-gradient(#090a07, #383120);
         box-shadow: 0rem 0rem 0.5rem #fdcc00;
+        color: $font-color-primary;
+
         a {
             color: $font-color-primary;
         }
+        
     }
 
 }

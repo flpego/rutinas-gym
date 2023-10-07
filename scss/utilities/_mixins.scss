@@ -1,4 +1,26 @@
-@mixin flex-around{
+@mixin flex(){
     display: flex;
     justify-content: space-around;
+}
+
+@mixin d-flex($direction, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin card($width, $height, $b-radius, $img-width, $img-height, $img-fit){
+    width: $width;
+    height: $height;
+    border-radius: $b-radius;
+    overflow: hidden;
+    
+    img {
+        width: $img-width;
+        height: $img-height;
+        object-fit: $img-fit;
+    }
 }

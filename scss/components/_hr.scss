@@ -1,0 +1,14 @@
+.hr-container {
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem;
+
+    hr {
+        background-color: #fc0;
+        border-color: #fdcc00;
+        height: 1px;
+        width: 70vw;
+        margin: auto;
+    }
+
+}
