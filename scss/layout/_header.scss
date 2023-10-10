@@ -5,7 +5,8 @@ header {
     @include flex;
 
     padding-block: 0.8rem;
-
+    background: $bg-gradient;
+    box-shadow: 0 -20px 26px rgb(0, 255, 21);
     .logo-container {
         width: 15%;
         flex-shrink: 2;
@@ -27,19 +28,12 @@ header {
 
             @include flex;
 
-            li {
-                list-style: none;
-            }
-            a {
-                color: $font-color-primary;
-                padding: 10px;
-                font-size: 1rem;
-                text-decoration: none;
-                &:hover {
-                    color: $font-color-secondary;
-                    text-shadow: #fc0 1px 0 10px;
-                }
-            }
+            @include a-style;
+            
+
+        }
+        li a &:hover{
+            text-decoration: underline;
         }
     }
 }

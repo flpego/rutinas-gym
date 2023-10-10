@@ -16,6 +16,7 @@
     font-family: "Roboto Mono", monospace;
     font-weight: 700;
     outline: none;
+    transition: .7s;
     a {
         text-decoration: none;
         color: #090a07;
@@ -25,12 +26,11 @@
         }
     }
     &:hover {
-        background: linear-gradient(#090a07, #383120);
-        box-shadow: 0rem 0rem 0.5rem #fdcc00;
-        color: $font-color-primary;
-
+        background: linear-gradient( #383120,#000000, #383120);
+        box-shadow: 0rem 0rem 1rem #fdcc00;
+        color: $font-color-secondary;
         a {
-            color: $font-color-primary;
+            color: $font-color-secondary;
         }
         
     }

@@ -23,6 +23,8 @@ header {
   display: flex;
   justify-content: space-around;
   padding-block: 0.8rem;
+  background: linear-gradient(#0f0f0a, #383120);
+  box-shadow: 0 -20px 26px rgb(0, 255, 21);
 }
 header .logo-container {
   width: 15%;
@@ -47,20 +49,60 @@ header nav .navbar-list {
 header nav .navbar-list li {
   list-style: none;
 }
-header nav .navbar-list a {
+header nav .navbar-list li a {
   color: rgba(255, 255, 255, 0.952);
-  padding: 10px;
+  padding: 2px 10px;
   font-size: 1rem;
   text-decoration: none;
+  transition: 0.3s;
 }
-header nav .navbar-list a:hover {
+header nav .navbar-list li a:hover {
   color: #fdcc00;
   text-shadow: #fc0 1px 0 10px;
+  border-bottom: 1px solid #fc0;
+}
+li a header nav:hover {
+  text-decoration: underline;
 }
 
 body {
   background: linear-gradient(#0f0f0a, #383120);
   font-family: "Roboto Mono", monospace;
+}
+
+footer {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: linear-gradient(#0f0f0a, #383120);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+/* Estilos para la lista dentro del footer */
+.footer-list {
+  display: flex;
+  padding: 0.5px;
+}
+.footer-list li {
+  list-style: none;
+}
+.footer-list li a {
+  color: rgba(255, 255, 255, 0.952);
+  padding: 2px 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-list li a:hover {
+  color: #fdcc00;
+  text-shadow: #fc0 1px 0 10px;
+  border-bottom: 1px solid #fc0;
 }
 
 /*media*/
@@ -80,6 +122,7 @@ body {
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
   outline: none;
+  transition: 0.7s;
 }
 .btn a {
   text-decoration: none;
@@ -90,12 +133,12 @@ body {
   color: rgba(255, 255, 255, 0.952);
 }
 .btn:hover {
-  background: linear-gradient(#090a07, #383120);
-  box-shadow: 0rem 0rem 0.5rem #fdcc00;
-  color: rgba(255, 255, 255, 0.952);
+  background: linear-gradient(#383120, #000000, #383120);
+  box-shadow: 0rem 0rem 1rem #fdcc00;
+  color: #fdcc00;
 }
 .btn:hover a {
-  color: rgba(255, 255, 255, 0.952);
+  color: #fdcc00;
 }
 
 .title {
@@ -105,10 +148,11 @@ body {
   text-align: center;
   font-size: 1.1rem;
   color: #ffffff;
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding-block: 1rem;
+}
+.title strong {
+  color: #fdcc00;
 }
 
 .rutinas-container {
@@ -123,24 +167,54 @@ body {
 .rutinas-container .rutinas-cards {
   background-color: #383120;
   width: 30%;
-  height: 450px;
+  height: 475px;
   border-radius: 30px;
   overflow: hidden;
+  box-shadow: 0rem 0rem 0.9rem black;
+  transition: 0.5s;
 }
 .rutinas-container .rutinas-cards img {
   width: 100%;
-  height: 75%;
+  height: 70%;
   object-fit: cover;
 }
 .rutinas-container .rutinas-cards h4 {
   max-width: 90%;
   height: 3.5rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .rutinas-container .rutinas-cards:hover {
   scale: 1.02;
-  box-shadow: 0rem 0rem 0.9rem #fdcc00;
+  box-shadow: 0rem 0rem 1rem #fdcc00;
+}
+
+.articulos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+.articulos-container .articulos-cards {
+  width: none;
+  height: 475px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0rem 0rem 0.9rem black;
+  transition: 0.5s;
+}
+.articulos-container .articulos-cards img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.articulos-container .articulos-cards:hover {
+  scale: 1.02;
+  box-shadow: 0rem 0rem 1rem #fdcc00;
+}
+.articulos-container .articulos-cards a {
+  text-align: center;
 }
 
 .hr-container {

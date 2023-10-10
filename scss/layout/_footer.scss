@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: $bg-gradient;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+/* Estilos para la lista dentro del footer */
+.footer-list {
+    display: flex;
+    padding: 0.5px;
+
+    @include a-style;
+}
