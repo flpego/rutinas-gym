@@ -1,0 +1,109 @@
+
+.form-container {
+    margin: auto
+}
+
+.registrarse-section {
+
+    @include d-flex(column, nowrap, center, center, 0);
+    width: 100%;
+    section {
+        width: 80%;
+    }
+    /* Iniciar sesion con google */
+    .google-signin-contenedor {
+        border: 1px solid #b7bcc441;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        height: 4rem;
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        .ingresar-p {
+            color: $font-color-secondary;
+            &:hover{
+                color: $font-color-primary;
+                font-size: 1.1rem;
+                text-shadow: 3px 3px 10px #fdcc00;
+            }
+        }
+    }
+
+    border-radius: 50px 0 50px 0;
+    background-color: $bg-color-primary;
+    box-shadow: 10px 8px 8px $bg-color-primary;
+
+    .registrarse-form {
+        width: 100%;
+        fieldset,
+        legend {
+            border: none;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: block;
+            margin: 0.5rem 0;
+            width: 100%;
+            padding: 10px;
+            color: $font-color-primary;
+            font-size: 0.9rem;
+            font-weight: 600;
+            background-color: #383120;
+            border-style: none;
+            border-radius: 10px;
+            &::placeholder {
+                color: #fdca00f8;
+            }
+            &:focus {
+                outline: none;
+                border: 2px solid #fc0;
+                background-color: #38312093;
+            }
+            &:hover {
+                box-shadow: 0rem 0rem 0.5rem #fdcc00;
+            }
+        }
+        label {
+            color: #e2e2e2;
+            font-weight: 700;
+        }
+    }
+}
+
+.link-recuperar-pass {
+    a {
+        color: $font-color-secondary;
+        &:hover{
+            color: $font-color-primary;
+            font-size: 1.1rem;
+            text-shadow: 3px 3px 10px #fdcc00;
+        }
+    }
+
+}
+.footer-form-container {
+    width: 70%;
+    height: auto;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje-conatiner{
+    display: flex;
+    flex-direction: column;
+    textarea{
+        @extend input;
+        height: 200px;
+
+    }
+}
+

@@ -1,0 +1,20 @@
+.nosotros {
+    p {
+        color: #b7bcc4;
+        font-family: "Roboto Mono", monospace;
+    }
+    .nosotros-list {
+        width: 60%;
+        margin: 30px;
+
+        li {
+            color: $font-color-primary;
+            font-family: "Roboto Mono", monospace;
+            list-style: none;
+            box-shadow: 10px 10px 5px black;
+            margin: 1.5rem;
+            border-radius: 15px;
+            padding: 1rem;
+        }
+    }
+}

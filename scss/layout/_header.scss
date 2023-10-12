@@ -1,7 +1,7 @@
 @import "../utilities/mixins";
 
 header {
-    
+    font-family: "Roboto Mono", monospace;
     @include flex;
 
     padding-block: 0.8rem;

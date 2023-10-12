@@ -16,6 +16,6 @@ footer {
 .footer-list {
     display: flex;
     padding: 0.5px;
-
+    font-family: "Roboto Mono", monospace;
     @include a-style;
 }

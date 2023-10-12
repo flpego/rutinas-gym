@@ -1,9 +1,9 @@
 .rutinas-container {
-    @include d-flex(row, wrap, center, center, 1rem);
+
     margin-block: 2rem;
     .rutinas-cards {
         background: linear-gradient(#000000, #4b360988, #000000,);
-        @include card(30%, 400px, 30px, 100%, 65%, cover);
+        @include card(none, 400px, 30px, 100%, 65%, cover);
         h4 {
             max-width: 95%;
             font-size: .9rem;
@@ -20,7 +20,6 @@
     }
 }
 .articulos-container {
-    @include d-grid(1fr 1fr 1fr, 1rem);
     margin: 1rem;
     .articulos-cards {
         @include card(none, 300px, 30px, 100%, 100%, cover);

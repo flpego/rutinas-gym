@@ -10,13 +10,18 @@
 @import "./layout/body";
 @import "./layout/footer";
     /*media*/
-@import "./layout/media/380";
+
+@import "./layout/media/480";
+@import "./layout/media/481_767";
+@import "./layout/media/768";
 /*_components*/
 @import "./components/buttons";
 @import "./components/titles";
 @import "./components/app-section.scss";
 @import "./components/rutinas_cards";
 @import "./components/hr";
+@import "./components/form";
+@import "./components/nosotros";
 
 
 

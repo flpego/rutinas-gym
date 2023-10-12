@@ -1,0 +1,23 @@
+@media #{map-get($breakpoints, lg)}{
+
+    .rutinas-container {
+        @include d-flex(row, wrap, center, flex-start, 1rem);
+        width: 100%;
+        .rutinas-cards {
+            width: 30%;
+        }
+    }
+
+    .articulos-container {
+  
+        @include d-grid(1fr 1fr 1fr, 1rem);
+        .articulos-cards {
+            width: 100%;
+        }
+    }
+
+    .form-container{
+        width: 50%;
+    }
+
+}
