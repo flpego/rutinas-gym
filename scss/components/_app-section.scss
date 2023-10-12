@@ -1,0 +1,9 @@
+.movil-container{
+
+    @include d-flex(column, nowrap, center, center, 0);
+
+    img {
+        width: 90%;
+    }
+    
+}

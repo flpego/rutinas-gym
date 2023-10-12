@@ -2,27 +2,47 @@
     @include d-flex(row, wrap, center, center, 1rem);
     margin-block: 2rem;
     .rutinas-cards {
-        background-color: $bg-color-secondary;
-        @include card(30%, 475px, 30px, 100%, 70%, cover);
+        background: linear-gradient(#000000, #4b360988, #000000,);
+        @include card(30%, 400px, 30px, 100%, 65%, cover);
         h4 {
-            max-width: 90%;
-            height: 3.5rem;
+            max-width: 95%;
+            font-size: .9rem;
+            height: auto;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
+            
         }
         @include hover-style;
+        &:hover{
+            background: linear-gradient(#000000, #000000, #4b360988);
+        }
     }
 }
 .articulos-container {
     @include d-grid(1fr 1fr 1fr, 1rem);
     margin: 1rem;
     .articulos-cards {
-        @include card(none, 475px, 30px, 100%, 70%, cover);
+        @include card(none, 300px, 30px, 100%, 100%, cover);
         @include hover-style;
 
-        a {
+        div {
+            background-color: rgba(0, 0, 0, 0.849);
+            top: -65%;
+            position: relative;
+            padding: 2rem;
             text-align: center;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1;
+            }
+            
+        }
+        a {
+            color: $font-color-secondary;
+            &:hover{
+                border-bottom: 1px solid #fc0;
+            }
         }
     }
 }

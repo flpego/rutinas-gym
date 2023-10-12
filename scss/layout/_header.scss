@@ -5,8 +5,9 @@ header {
     @include flex;
 
     padding-block: 0.8rem;
-    background: $bg-gradient;
-    box-shadow: 0 -20px 26px rgb(0, 255, 21);
+    margin-bottom: 1rem;
+    background: linear-gradient( #000000, #3831205e );
+    box-shadow: 0 0px 4px rgba(88, 68, 0, 0.411) inset;
     .logo-container {
         width: 15%;
         flex-shrink: 2;

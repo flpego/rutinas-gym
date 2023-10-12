@@ -23,8 +23,9 @@ header {
   display: flex;
   justify-content: space-around;
   padding-block: 0.8rem;
-  background: linear-gradient(#0f0f0a, #383120);
-  box-shadow: 0 -20px 26px rgb(0, 255, 21);
+  margin-bottom: 1rem;
+  background: linear-gradient(#000000, rgba(56, 49, 32, 0.368627451));
+  box-shadow: 0 0px 4px rgba(88, 68, 0, 0.411) inset;
 }
 header .logo-container {
   width: 15%;
@@ -58,7 +59,7 @@ header nav .navbar-list li a {
 }
 header nav .navbar-list li a:hover {
   color: #fdcc00;
-  text-shadow: #fc0 1px 0 10px;
+  text-shadow: #fc0 1px 0 7px;
   border-bottom: 1px solid #fc0;
 }
 li a header nav:hover {
@@ -101,17 +102,43 @@ footer {
 }
 .footer-list li a:hover {
   color: #fdcc00;
-  text-shadow: #fc0 1px 0 10px;
+  text-shadow: #fc0 1px 0 7px;
   border-bottom: 1px solid #fc0;
 }
 
 /*media*/
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .rutinas-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .rutinas-container .rutinas-cards {
+    width: 100%;
+  }
+}
 /*_components*/
 .btn {
   display: flex;
   width: auto;
   margin: auto;
-  background: linear-gradient(rgb(245, 223, 135), #fcc900);
+  background: linear-gradient(rgba(255, 238, 170, 0.877), #ffdb4d, #ffcc00);
   color: #090a07;
   font-size: 0.9rem;
   padding: 0.5rem 0.8rem;
@@ -154,6 +181,26 @@ footer {
 .title strong {
   color: #fdcc00;
 }
+.title a {
+  color: #fff131;
+  letter-spacing: 2px;
+}
+.title a:hover {
+  color: #fdcc00;
+  text-decoration: underline;
+}
+
+.movil-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.movil-container img {
+  width: 90%;
+}
 
 .rutinas-container {
   display: flex;
@@ -165,9 +212,9 @@ footer {
   margin-block: 2rem;
 }
 .rutinas-container .rutinas-cards {
-  background-color: #383120;
+  background: linear-gradient(#000000, rgba(75, 54, 9, 0.5333333333), #000000);
   width: 30%;
-  height: 475px;
+  height: 400px;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0rem 0rem 0.9rem black;
@@ -175,12 +222,13 @@ footer {
 }
 .rutinas-container .rutinas-cards img {
   width: 100%;
-  height: 70%;
+  height: 65%;
   object-fit: cover;
 }
 .rutinas-container .rutinas-cards h4 {
-  max-width: 90%;
-  height: 3.5rem;
+  max-width: 95%;
+  font-size: 0.9rem;
+  height: auto;
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +236,9 @@ footer {
 .rutinas-container .rutinas-cards:hover {
   scale: 1.02;
   box-shadow: 0rem 0rem 1rem #fdcc00;
+}
+.rutinas-container .rutinas-cards:hover {
+  background: linear-gradient(#000000, #000000, rgba(75, 54, 9, 0.5333333333));
 }
 
 .articulos-container {
@@ -198,7 +249,7 @@ footer {
 }
 .articulos-container .articulos-cards {
   width: none;
-  height: 475px;
+  height: 300px;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0rem 0rem 0.9rem black;
@@ -206,21 +257,35 @@ footer {
 }
 .articulos-container .articulos-cards img {
   width: 100%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
 }
 .articulos-container .articulos-cards:hover {
   scale: 1.02;
   box-shadow: 0rem 0rem 1rem #fdcc00;
 }
-.articulos-container .articulos-cards a {
+.articulos-container .articulos-cards div {
+  background-color: rgba(0, 0, 0, 0.849);
+  top: -65%;
+  position: relative;
+  padding: 2rem;
   text-align: center;
+  opacity: 0.9;
+}
+.articulos-container .articulos-cards div:hover {
+  opacity: 1;
+}
+.articulos-container .articulos-cards a {
+  color: #fdcc00;
+}
+.articulos-container .articulos-cards a:hover {
+  border-bottom: 1px solid #fc0;
 }
 
 .hr-container {
   display: flex;
   justify-content: center;
-  margin-block: 1rem;
+  margin-block: 2rem;
 }
 .hr-container hr {
   background-color: #fc0;

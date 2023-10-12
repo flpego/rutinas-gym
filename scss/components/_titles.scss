@@ -1,14 +1,24 @@
 .title {
-    width: 90%;
-    margin: 0 auto;
-    height: fit-content;
-    text-align: center;
-    font-size: 1.1rem;
-    color: #ffffff;
-    justify-content: center;
-    padding-block: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  height: fit-content;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  justify-content: center;
+  padding-block: 1rem;
 
-    strong {
+  strong {
+    color: $font-color-secondary;
+  }
+
+  a {
+    color: $links-color;
+    letter-spacing: 2px;
+   
+    &:hover {
       color: $font-color-secondary;
+      text-decoration: underline;
     }
   }
+}

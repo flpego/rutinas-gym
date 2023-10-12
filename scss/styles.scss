@@ -1,5 +1,6 @@
 /*_variables y _mixins*/
 @import "./utilities/variables";
+@import "./utilities/maps";
 /*_base*/
 @import "./base/reset";
 @import "base/_typo.scss";
@@ -9,10 +10,11 @@
 @import "./layout/body";
 @import "./layout/footer";
     /*media*/
-
+@import "./layout/media/380";
 /*_components*/
 @import "./components/buttons";
 @import "./components/titles";
+@import "./components/app-section.scss";
 @import "./components/rutinas_cards";
 @import "./components/hr";
 
