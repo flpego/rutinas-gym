@@ -7,7 +7,7 @@
   color: #ffffff;
   justify-content: center;
   padding-block: 1rem;
-
+  letter-spacing: .3px;
   strong {
     color: $font-color-secondary;
   }
@@ -21,4 +21,17 @@
       text-decoration: underline;
     }
   }
+}
+
+.special-title {
+  @extend .title;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $font-color-secondary;
+}
+
+.parrafo {
+  width: 99%;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }

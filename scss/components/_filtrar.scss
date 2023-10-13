@@ -1,0 +1,16 @@
+.filtrar {
+
+    select{
+        border: none;
+        border-radius: 5%;
+        padding: .5rem;
+        margin: 1rem;
+        font-family: $font-family;
+        background: linear-gradient(rgba(255, 238, 170, 0.877),#ffdb4d ,#ffcc00);
+        transition: background 0.3s;
+    }
+
+    input {
+        padding: .5rem;
+    }
+}

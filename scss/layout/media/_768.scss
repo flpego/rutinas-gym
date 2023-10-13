@@ -8,6 +8,13 @@
         }
     }
 
+    .movil-container{
+        @include d-grid(2fr 1fr, 1rem);
+        align-items: center;
+        justify-items: center;
+        
+    }
+
     .articulos-container {
   
         @include d-grid(1fr 1fr 1fr, 1rem);

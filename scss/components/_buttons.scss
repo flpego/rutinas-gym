@@ -13,8 +13,8 @@
         background 0.9s,
         color 0.1s,
         border 0.3s;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 700;
+    font-family:$font-family;
+    font-weight: 500;
     outline: none;
     transition: .7s;
     a {
@@ -29,6 +29,7 @@
         background: linear-gradient( #383120,#000000, #383120);
         box-shadow: 0rem 0rem 1rem #fdcc00;
         color: $font-color-secondary;
+        font-weight: 700;
         a {
             color: $font-color-secondary;
         }

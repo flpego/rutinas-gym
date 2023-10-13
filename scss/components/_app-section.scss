@@ -1,9 +1,22 @@
 .movil-container{
 
-    @include d-flex(column, nowrap, center, center, 0);
+    background-color: $bg-color-primary;
+    padding: 2rem;
 
     img {
         width: 90%;
+    }
+
+    div {
+        margin: auto;
+        width: 85%;
+        text-align: center;
+        img {
+            width: 40%;
+            &:hover{
+                scale: 1.2;
+            }
+        }
     }
     
 }
