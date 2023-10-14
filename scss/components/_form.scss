@@ -1,9 +1,10 @@
 
 .form-container {
-    margin: auto
+    margin: auto;
 }
 
 .registrarse-section {
+    margin-block: 1rem;
 
     @include d-flex(column, nowrap, center, center, 0);
     width: 100%;

@@ -6,8 +6,8 @@
     .nosotros-list {
         width: 60%;
         margin: 30px;
-
         li {
+
             color: $font-color-primary;
             font-family: "Roboto Mono", monospace;
             list-style: none;
@@ -16,5 +16,6 @@
             border-radius: 15px;
             padding: 1rem;
         }
+   
     }
 }
