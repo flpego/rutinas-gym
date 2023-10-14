@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 button,
@@ -28,8 +29,8 @@ header {
   font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
   justify-content: space-around;
-  padding-block: 0.8rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  padding-block: 0.5rem;
   background: linear-gradient(#000000, rgba(56, 49, 32, 0.368627451));
   box-shadow: 0 0px 4px rgba(88, 68, 0, 0.411) inset;
 }
@@ -39,14 +40,12 @@ header .logo-container {
 }
 header .logo-container .logo {
   width: 100%;
-  height: 100%;
   color: #fdcc00;
   font-size: 1rem;
   text-shadow: #fc0 1px 0 10px;
   padding-block: 0.6rem;
 }
 header nav {
-  padding: 10px 5px;
   width: auto;
 }
 header nav .navbar-list {
@@ -72,6 +71,21 @@ li a header nav:hover {
   text-decoration: underline;
 }
 
+.rotate-scale-down-ver {
+  animation: rotate-scale-down-ver 2s 3 both;
+}
+
+@keyframes rotate-scale-down-ver {
+  0% {
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    transform: scale(0.5) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+  }
+}
 body {
   background: linear-gradient(#0f0f0a, #383120);
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -118,7 +132,11 @@ footer {
   header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  header .logo-container {
+    width: 100%;
+    margin: auto 25px;
   }
   header .navbar-list {
     display: flex;
@@ -251,13 +269,13 @@ footer {
   margin: auto;
   background: linear-gradient(rgba(255, 238, 170, 0.877), #ffdb4d, #ffcc00);
   color: #090a07;
-  font-size: 0.9rem;
   padding: 0.5rem 0.8rem;
   border-radius: 100vmax;
   border: none;
   cursor: pointer;
   transition: background 0.9s, color 0.1s, border 0.3s;
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.9rem;
   font-weight: 500;
   outline: none;
   transition: 0.7s;
@@ -265,7 +283,6 @@ footer {
 .btn a {
   text-decoration: none;
   color: #090a07;
-  font-weight: 700;
 }
 .btn a:hover {
   color: rgba(255, 255, 255, 0.952);
@@ -274,12 +291,26 @@ footer {
   background: linear-gradient(#383120, #000000, #383120);
   box-shadow: 0rem 0rem 1rem #fdcc00;
   color: #fdcc00;
-  font-weight: 700;
 }
 .btn:hover a {
   color: #fdcc00;
 }
 
+.animacion {
+  -webkit-animation: shadow-drop-br 3s ease-in-out infinite reverse;
+  animation: shadow-drop-br 3s ease-in-out infinite reverse;
+}
+
+@keyframes shadow-drop-br {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 12px 12px 20px -12px rgb(238, 255, 0);
+    box-shadow: 0px 0px 10px 2px rgb(238, 202, 0);
+  }
+}
 .title, .special-title {
   width: 90%;
   margin: 0 auto;
@@ -312,7 +343,7 @@ footer {
 .parrafo {
   width: 99%;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .movil-container {
@@ -453,10 +484,11 @@ footer {
 }
 .registrarse-section .google-signin-contenedor .ingresar-p {
   color: #fdcc00;
+  font-size: 0.9rem;
 }
 .registrarse-section .google-signin-contenedor .ingresar-p:hover {
   color: rgba(255, 255, 255, 0.952);
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-shadow: 3px 3px 10px #fdcc00;
 }
 .registrarse-section .registrarse-form {
@@ -473,9 +505,9 @@ footer {
   margin: 0.5rem 0;
   width: 100%;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.952);
+  color: #0f0f0a;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #383120;
   border-style: none;
   border-radius: 10px;
@@ -490,6 +522,7 @@ footer {
 }
 .registrarse-section .registrarse-form input:hover, .registrarse-section .registrarse-form .mensaje-conatiner textarea:hover, .mensaje-conatiner .registrarse-section .registrarse-form textarea:hover {
   box-shadow: 0rem 0rem 0.5rem #fdcc00;
+  color: #fdcc00;
 }
 .registrarse-section .registrarse-form label {
   color: #e2e2e2;
@@ -520,6 +553,7 @@ footer {
 }
 .mensaje-conatiner textarea {
   height: 200px;
+  resize: vertical;
 }
 
 .nosotros p {
@@ -540,17 +574,40 @@ footer {
   padding: 1rem;
 }
 
-.filtrar select {
+.filtrar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.filtrar select, .filtrar .input-buscar-container input, .filtrar .input-buscar-container .mensaje-conatiner textarea, .mensaje-conatiner .filtrar .input-buscar-container textarea {
   border: none;
   border-radius: 5%;
   padding: 0.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   background: linear-gradient(rgba(255, 238, 170, 0.877), #ffdb4d, #ffcc00);
   transition: background 0.3s;
 }
-.filtrar input, .filtrar .mensaje-conatiner textarea, .mensaje-conatiner .filtrar textarea {
-  padding: 0.5rem;
+.filtrar .input-buscar-container {
+  position: relative;
+}
+.filtrar .input-buscar-container input, .filtrar .input-buscar-container .mensaje-conatiner textarea, .mensaje-conatiner .filtrar .input-buscar-container textarea {
+  padding: 10px 30px 10px 10px;
+  cursor: pointer;
+}
+.filtrar .input-buscar-container input:hover:hover, .filtrar .input-buscar-container .mensaje-conatiner textarea:hover:hover, .mensaje-conatiner .filtrar .input-buscar-container textarea:hover:hover {
+  scale: 1.02;
+  box-shadow: 0rem 0rem 1rem #fdcc00;
+}
+.filtrar .input-buscar-container span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

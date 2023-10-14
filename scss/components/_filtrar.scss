@@ -1,16 +1,33 @@
 .filtrar {
-
-    select{
+    @include d-flex(row, wrap, center, center, 1rem);
+    select {
         border: none;
         border-radius: 5%;
-        padding: .5rem;
-        margin: 1rem;
+        padding: 0.5rem;
+        margin: .5rem;
         font-family: $font-family;
-        background: linear-gradient(rgba(255, 238, 170, 0.877),#ffdb4d ,#ffcc00);
+        background: linear-gradient(rgba(255, 238, 170, 0.877), #ffdb4d, #ffcc00);
         transition: background 0.3s;
     }
 
-    input {
-        padding: .5rem;
+    .input-buscar-container {
+        position: relative;
+
+        input {
+            padding: 10px 30px 10px 10px;
+            @extend select;
+            cursor: pointer;
+            &:hover{
+                @include hover-style;
+            }
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
     }
 }

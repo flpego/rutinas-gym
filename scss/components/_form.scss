@@ -26,9 +26,10 @@
         }
         .ingresar-p {
             color: $font-color-secondary;
+            font-size: .9rem;
             &:hover{
                 color: $font-color-primary;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 text-shadow: 3px 3px 10px #fdcc00;
             }
         }
@@ -52,9 +53,9 @@
             margin: 0.5rem 0;
             width: 100%;
             padding: 10px;
-            color: $font-color-primary;
+            color: $font-color-tercera;
             font-size: 0.9rem;
-            font-weight: 600;
+            font-weight: map-get($font-w, medium);
             background-color: #383120;
             border-style: none;
             border-radius: 10px;
@@ -68,11 +69,12 @@
             }
             &:hover {
                 box-shadow: 0rem 0rem 0.5rem #fdcc00;
+                color: $font-color-secondary;
             }
         }
         label {
             color: #e2e2e2;
-            font-weight: 700;
+            font-weight: map-get($font-w, bold);
         }
     }
 }
@@ -103,7 +105,7 @@
     textarea{
         @extend input;
         height: 200px;
-
+        resize: vertical;
     }
 }
 

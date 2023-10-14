@@ -2,7 +2,11 @@
     header {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        .logo-container {
+            width: 100%;
+            margin: auto 25px;
+        }
         .navbar-list {
             @include d-flex(column, nowrap, center, flex-start, 1rem);
         }

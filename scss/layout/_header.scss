@@ -3,17 +3,15 @@
 header {
     font-family: $font-family;
     @include flex;
-
-    padding-block: 0.8rem;
-    margin-bottom: 1rem;
-    background: linear-gradient( #000000, #3831205e );
+    align-items: center;
+    padding-block: .5rem;
+    background: linear-gradient(#000000, #3831205e);
     box-shadow: 0 0px 4px rgba(88, 68, 0, 0.411) inset;
     .logo-container {
         width: 15%;
         flex-shrink: 2;
         .logo {
             width: 100%;
-            height: 100%;
             color: $font-color-secondary;
             font-size: 1rem;
             text-shadow: #fc0 1px 0 10px;
@@ -22,19 +20,33 @@ header {
     }
 
     nav {
-        padding: 10px 5px;
         width: auto;
 
         .navbar-list {
-
             @include flex;
 
             @include a-style;
-            
-
         }
-        li a &:hover{
+        li a &:hover {
             text-decoration: underline;
         }
     }
 }
+
+
+
+.rotate-scale-down-ver {
+	animation: rotate-scale-down-ver 2s 3 both;
+}
+
+@keyframes rotate-scale-down-ver {
+    0% {
+      transform: scale(1) rotateY(0);
+    }
+    50% {
+      transform: scale(0.5) rotateY(180deg);
+    }
+    100% {
+      transform: scale(1) rotateY(360deg);
+    }
+  }
