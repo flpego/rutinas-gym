@@ -34,3 +34,19 @@
     }
 }
 
+.animacion {
+    -webkit-animation: shadow-drop-br 3s ease-in-out infinite reverse;
+    animation: shadow-drop-br 3s ease-in-out infinite reverse;
+}
+
+@keyframes shadow-drop-br {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: 12px 12px 20px -12px rgb(238, 255, 0);
+        box-shadow: 0px 0px 10px 2px rgb(238, 202, 0);
+    }
+}
+
