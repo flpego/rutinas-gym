@@ -7,18 +7,7 @@ header {
     padding-block: .5rem;
     background: linear-gradient(#000000, #3831205e);
     box-shadow: 0 0px 4px rgba(88, 68, 0, 0.411) inset;
-    .logo-container {
-        display: flex;
-        width: 15%;
-        flex-shrink: 2;
-        .logo {
-            width: 100%;
-            color: $font-color-secondary;
-            font-size: 1rem;
-            text-shadow: #fc0 1px 0 10px;
-            padding-block: 0.6rem;
-        }
-    }
+    @include logo-styles;
 
     nav {
         width: auto;
@@ -27,6 +16,11 @@ header {
             @include flex;
 
             @include a-style;
+
+            i{
+                color: $font-color-primary;
+                padding-left: 5px;
+            }
         }
 
     }

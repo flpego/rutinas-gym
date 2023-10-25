@@ -10,6 +10,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     gap: 1rem;
+    @include logo-styles;
 }
 
 /* Estilos para la lista dentro del footer */

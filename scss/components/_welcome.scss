@@ -1,0 +1,14 @@
+.welcome {
+    display: flex;
+    background-image: url(../../assets/images/welcome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    h1, h2{
+        font-size: 2rem;
+        text-shadow: 2px 2px 7px $font-color-tercera;
+    }
+}

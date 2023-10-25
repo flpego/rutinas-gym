@@ -1,0 +1,56 @@
+.noticias {
+    background: $bg-color-primary;
+    margin-top: 1rem;
+    padding-block: 2rem;
+    article {
+        form {
+            @include d-flex(column, nowrap, center, center, 1rem);
+            text-align: center;
+
+            h2 {
+                font-weight: map-get($font-w, bold);
+                color: $links-color;
+            }
+
+            p {
+                font-weight: map-get($font-w, ligth);
+                width: 60%;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.inputs-container {
+    display: flex;
+    @include d-flex(row, wrap, center, center, 1rem);
+    width: 70%;
+
+    input {
+        width: 70%;
+        padding: 1rem;
+        background: $bg-color-secondary;
+        color: $font-color-secondary;
+        border-radius: 100vmax;
+        &:focus {
+            outline: none;
+            border: 1px solid;
+            color: $font-color-secondary;
+        }
+        &::placeholder {
+            color: $font-color-secondary;
+        }
+    }
+
+    button {
+        background: $bg-color-secondary;
+        color: $links-color;
+        padding: 1rem;
+        border-radius: 100vmax;
+        font-weight: map-get($font-w, medium );
+        &:hover {
+            border: 1px solid $font-color-secondary;
+            background: $bg-gradient;
+        }
+    }
+}

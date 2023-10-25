@@ -52,8 +52,22 @@
 
 @mixin hover-style {
     &:hover {
-        scale: 1.02;
-        box-shadow: 0rem 0rem 1rem #fdcc00;
+        scale: 1.05;
+    }
+}
+
+@mixin logo-styles {
+    .logo-container {
+        display: flex;
+        width: 15%;
+        flex-shrink: 2;
+        .logo {
+            width: 100%;
+            color: $font-color-secondary;
+            font-size: 1rem;
+            text-shadow: #fc0 1px 0 10px;
+            padding-block: 0.6rem;
+        }
     }
 }
 

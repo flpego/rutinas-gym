@@ -14,8 +14,10 @@
             
         }
         @include hover-style;
+
         &:hover{
             background: linear-gradient(#000000, #000000, #4b360988);
+
         }
     }
 }

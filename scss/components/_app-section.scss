@@ -1,6 +1,6 @@
-.movil-container{
-
+.movil-container {
     background-color: $bg-color-primary;
+    padding-top: 1.5rem;
 
     img {
         width: 90%;
@@ -12,10 +12,9 @@
         text-align: center;
         img {
             width: 40%;
-            &:hover{
+            &:hover {
                 scale: 1.2;
             }
         }
     }
-    
 }
