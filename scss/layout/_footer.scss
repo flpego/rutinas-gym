@@ -1,22 +1,36 @@
 footer {
     width: 100%;
-    height: 3rem;
+    height: auto;
     padding: 1rem;
     margin-top: 1rem;
     background: $bg-gradient;
     color: #ffffff;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 1rem;
+
+    @include d-grid(.5fr auto 1fr, 1rem);
+
     @include logo-styles;
 }
 
 /* Estilos para la lista dentro del footer */
 .footer-list {
-    display: flex;
+    @include d-flex(column, wrap, center, flex-start, 0.5rem);
     padding: 0.5px;
     font-family: $font-family;
     @include a-style;
+    h2 {
+        padding-left: 0.5rem;
+    }
+}
+.footer-list-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+.footer-list-icons {
+    @extend .footer-list;
+    flex-direction: row;
+    height: auto;
+}
 }
