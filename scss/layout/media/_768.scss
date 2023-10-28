@@ -20,6 +20,24 @@
         }
     }
 
+    .welcome {
+        h1,h2 {font-size: 2rem;}
+    }
+
+    .noticias{
+        p {
+            width: 60%;
+        }
+
+    }
+    .inputs-container {
+        width: 90%;
+        flex-direction: row;
+        input {
+            width: 60%;
+        }
+    }
+
     .form-container {
         width: 45%;
         height: 100vh;

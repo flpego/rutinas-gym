@@ -14,7 +14,6 @@
 
             p {
                 font-weight: map-get($font-w, ligth);
-                width: 60%;
                 padding: 1rem;
             }
         }
@@ -23,11 +22,9 @@
 
 .inputs-container {
     display: flex;
-    @include d-flex(row, wrap, center, center, 1rem);
-    width: 70%;
+    @include d-flex(none, wrap, center, center, 1rem);
 
     input {
-        width: 70%;
         padding: 1rem;
         background: $bg-color-secondary;
         color: $font-color-secondary;

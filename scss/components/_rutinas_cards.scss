@@ -1,23 +1,20 @@
 .rutinas-container {
-
     margin-block: 2rem;
     .rutinas-cards {
-        background: linear-gradient(#000000, #4b360988, #000000,);
+        background: linear-gradient(#000000, #4b360988, #000000);
         @include card(none, 400px, 30px, 100%, 65%, cover);
         h4 {
             max-width: 95%;
-            font-size: .9rem;
+            font-size: 0.9rem;
             height: auto;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
-            
         }
         @include hover-style;
 
-        &:hover{
+        &:hover {
             background: linear-gradient(#000000, #000000, #4b360988);
-
         }
     }
 }
@@ -37,13 +34,41 @@
             &:hover {
                 opacity: 1;
             }
-            
         }
         a {
             color: $font-color-secondary;
-            &:hover{
+            &:hover {
                 border-bottom: 1px solid #fc0;
             }
+        }
+    }
+}
+
+.rutinas-main-container {
+    
+    article {
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        height: 300px;
+        margin: 2rem 1rem;
+        overflow: hidden;
+
+        img {
+            max-height: 90%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h4 {
+            color: $font-color-primary;
+            font-style: italic;
+        }
+
+        p {
+            margin: 1rem 0;
+            width: 60%;
         }
     }
 }

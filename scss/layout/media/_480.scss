@@ -5,7 +5,6 @@
         align-items: flex-start;
         .logo-container {
             width: 100%;
-            margin: auto 25px;
         }
         .navbar-list {
             @include d-flex(column, nowrap, center, flex-start, 1rem);
@@ -25,6 +24,21 @@
         width: 90%;
         @include d-grid(1fr, 1rem);
         .articulos-cards {
+            width: 100%;
+        }
+    }
+
+    .welcome {
+        h1,h2 {font-size: 1.5rem;}
+    }
+
+    .inputs-container{
+        width: 90%;
+        flex-direction: column;
+        input {
+            width: 100%;
+        }
+        p {
             width: 100%;
         }
     }

@@ -19,7 +19,7 @@
         @include d-grid(1fr, 1rem);
         align-items: center;
         justify-items: center;
-        padding: 1rem;
+
 
         
     }
@@ -29,6 +29,18 @@
         @include d-grid(1fr 1fr, 1rem);
         .articulos-cards {
             width: 100%;
+        }
+    }
+
+    .welcome {
+        h1,h2 {font-size: 2rem;}
+    }
+
+    .inputs-container {
+        width: 90%;
+        flex-direction: row;
+        input {
+            width: 80%;
         }
     }
 

@@ -41,7 +41,7 @@ header .logo-container {
   flex-shrink: 2;
 }
 header .logo-container .logo {
-  width: 100%;
+  width: 90%;
   color: #fdcc00;
   font-size: 1rem;
   text-shadow: #fc0 1px 0 10px;
@@ -102,7 +102,7 @@ footer .logo-container {
   flex-shrink: 2;
 }
 footer .logo-container .logo {
-  width: 100%;
+  width: 90%;
   color: #fdcc00;
   font-size: 1rem;
   text-shadow: #fc0 1px 0 10px;
@@ -163,7 +163,6 @@ footer .logo-container .logo p {
   }
   header .logo-container {
     width: 100%;
-    margin: auto 25px;
   }
   header .navbar-list {
     display: flex;
@@ -193,6 +192,19 @@ footer .logo-container .logo p {
     gap: 1rem;
   }
   .articulos-container .articulos-cards {
+    width: 100%;
+  }
+  .welcome h1, .welcome h2 {
+    font-size: 1.5rem;
+  }
+  .inputs-container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .inputs-container input, .inputs-container .mensaje-conatiner textarea, .mensaje-conatiner .inputs-container textarea {
+    width: 100%;
+  }
+  .inputs-container p {
     width: 100%;
   }
   .form-container {
@@ -238,7 +250,6 @@ footer .logo-container .logo p {
     gap: 1rem;
     align-items: center;
     justify-items: center;
-    padding: 1rem;
   }
   .articulos-container {
     display: grid;
@@ -247,6 +258,16 @@ footer .logo-container .logo p {
   }
   .articulos-container .articulos-cards {
     width: 100%;
+  }
+  .welcome h1, .welcome h2 {
+    font-size: 2rem;
+  }
+  .inputs-container {
+    width: 90%;
+    flex-direction: row;
+  }
+  .inputs-container input, .inputs-container .mensaje-conatiner textarea, .mensaje-conatiner .inputs-container textarea {
+    width: 80%;
   }
   .form-container {
     width: 70%;
@@ -285,6 +306,19 @@ footer .logo-container .logo p {
   }
   .articulos-container .articulos-cards {
     width: 100%;
+  }
+  .welcome h1, .welcome h2 {
+    font-size: 2rem;
+  }
+  .noticias p {
+    width: 60%;
+  }
+  .inputs-container {
+    width: 90%;
+    flex-direction: row;
+  }
+  .inputs-container input, .inputs-container .mensaje-conatiner textarea, .mensaje-conatiner .inputs-container textarea {
+    width: 60%;
   }
   .form-container {
     width: 45%;
@@ -377,7 +411,7 @@ footer .logo-container .logo p {
 
 .movil-container {
   background-color: #0f0f0a;
-  padding-top: 1.5rem;
+  padding-block: 1.5rem;
 }
 .movil-container img {
   width: 90%;
@@ -461,6 +495,28 @@ footer .logo-container .logo p {
 }
 .articulos-container .articulos-cards a:hover {
   border-bottom: 1px solid #fc0;
+}
+
+.rutinas-main-container article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  height: 300px;
+  margin: 2rem 1rem;
+  overflow: hidden;
+}
+.rutinas-main-container article img {
+  max-height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+.rutinas-main-container article h4 {
+  color: rgba(255, 255, 255, 0.952);
+  font-style: italic;
+}
+.rutinas-main-container article p {
+  margin: 1rem 0;
+  width: 60%;
 }
 
 .hr-container {
@@ -672,22 +728,19 @@ footer .logo-container .logo p {
 }
 .noticias article form p {
   font-weight: 300;
-  width: 60%;
   padding: 1rem;
 }
 
 .inputs-container {
   display: flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: none;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 70%;
 }
 .inputs-container input, .inputs-container .mensaje-conatiner textarea, .mensaje-conatiner .inputs-container textarea {
-  width: 70%;
   padding: 1rem;
   background: #383120;
   color: #fdcc00;
@@ -724,7 +777,6 @@ footer .logo-container .logo p {
   align-items: center;
 }
 .welcome h1, .welcome h2 {
-  font-size: 2rem;
   text-shadow: 2px 4px 2px #0f0f0a;
 }
 
