@@ -1,13 +1,11 @@
 
-.form-container {
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
+
 
 .registrarse-section {
     margin-block: 1rem;
-
+    section {
+        padding: 1rem;
+    }
     @include d-flex(column, nowrap, center, center, 0);
     width: 100%;
     section {

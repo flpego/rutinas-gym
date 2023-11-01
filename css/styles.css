@@ -237,6 +237,7 @@ footer .logo-container .logo p {
   .form-container {
     width: 90%;
     height: auto;
+    margin: 2rem auto;
   }
   footer {
     display: flex;
@@ -306,6 +307,14 @@ footer .logo-container .logo p {
   .articulos-container .articulos-cards {
     width: 100%;
   }
+  .sub-premium-grid {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
   .welcome h1,
   .welcome h2 {
     font-size: 2rem;
@@ -319,6 +328,8 @@ footer .logo-container .logo p {
   }
   .form-container {
     width: 70%;
+    display: block;
+    margin: 2rem auto;
   }
   footer {
     height: auto;
@@ -354,6 +365,14 @@ footer .logo-container .logo p {
   }
   .index-rutinas-container article .g4 {
     grid-area: g4;
+  }
+  .sub-premium-grid {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
   }
   .rutinas-container {
     width: 100%;
@@ -404,7 +423,9 @@ footer .logo-container .logo p {
   }
   .form-container {
     width: 45%;
-    height: 100vh;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
   }
 }
 /*_components*/
@@ -583,12 +604,6 @@ aside {
   cursor: pointer;
 }
 
-.form-container {
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
 .registrarse-section {
   margin-block: 1rem;
   display: flex;
@@ -602,6 +617,9 @@ aside {
   border-radius: 50px 0 50px 0;
   background-color: #0f0f0a;
   box-shadow: 10px 8px 8px #0f0f0a;
+}
+.registrarse-section section {
+  padding: 1rem;
 }
 .registrarse-section section {
   width: 80%;
@@ -722,7 +740,7 @@ aside {
   }
 }
 .index-rutinas-container {
-  margin-block: 2rem;
+  margin: 2rem;
 }
 .index-rutinas-container article h2 {
   font-size: 1.1rem;
@@ -740,7 +758,7 @@ aside {
 .index-rutinas-container article a {
   margin-block: 0.5rem;
   color: #0f0f0a;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100vmax;
   background-color: #fff131;
 }
@@ -760,7 +778,7 @@ aside {
 
 .noticias {
   background: #0f0f0a;
-  margin-top: 1rem;
+  margin-block: 2rem;
   padding-block: 2rem;
 }
 .noticias article form {
@@ -803,6 +821,7 @@ aside {
 }
 .inputs-container input::placeholder, .inputs-container .mensaje-conatiner textarea::placeholder, .mensaje-conatiner .inputs-container textarea::placeholder {
   color: #fdcc00;
+  opacity: 0.7;
 }
 .inputs-container button {
   background: #383120;
@@ -814,6 +833,89 @@ aside {
 .inputs-container button:hover {
   border: 1px solid #fdcc00;
   background: linear-gradient(#131313, #383120);
+}
+
+.sub-premium-motivation {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sub-premium-motivation h4 {
+  color: #fdcc00;
+  font-size: 1.1rem;
+  width: 90%;
+  margin: auto;
+}
+.sub-premium-motivation p {
+  margin: 1rem auto;
+  width: 90%;
+  font-weight: 200;
+}
+
+.sub-premium-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eeff00;
+  border-top: 1px solid #eeff00;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.sub-premium-info h3 {
+  color: #fdcc00;
+}
+.sub-premium-info ul {
+  list-style: none;
+}
+.sub-premium-info ul li {
+  margin-block: 0.3rem;
+  font-weight: 500;
+  color: #fdcc00;
+}
+
+.contratar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contratar-card {
+  border-bottom: 1px solid #eeff00;
+  border-top: 1px solid #eeff00;
+  border-radius: 25%;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 1px -5px 10px rgba(238, 255, 0, 0.4117647059);
+}
+.contratar-card h4 {
+  color: #fff131;
+  padding: 0.4rem;
+}
+.contratar-card span {
+  color: rgba(255, 255, 255, 0.952);
+  font-size: 2rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+}
+.contratar-card hr {
+  width: 50%;
+  margin: 0.2rem auto;
+  border: 1px solid rgba(238, 255, 0, 0.4117647059);
+}
+.contratar-card a {
+  margin-block: 3rem;
+  padding: 0.7rem;
+  color: #00d400;
+}
+.contratar-card a:hover {
+  color: #fff131;
 }
 
 .nosotros p {
@@ -963,7 +1065,7 @@ aside {
 
 .title, .special-title {
   width: 90%;
-  margin: auto;
+  margin: 1rem auto;
   height: fit-content;
   text-align: center;
   font-size: 1.2rem;

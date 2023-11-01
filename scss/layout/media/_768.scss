@@ -35,6 +35,15 @@
         }
     }
 
+    .sub-premium-grid{
+ 
+        margin: 4rem auto;
+        @include d-grid(1fr 2fr , 1rem);
+        justify-items: center;
+        align-items: center;
+    
+    }
+
     .rutinas-container {
         width: 100%;
         .rutinas-cards {
@@ -86,8 +95,11 @@
         }
     }
 
+
     .form-container {
         width: 45%;
-        height: 100vh;
+        margin: 3rem auto;
+        display: flex;
+        align-items: center;
     }
 }

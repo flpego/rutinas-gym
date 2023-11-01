@@ -1,5 +1,5 @@
 .index-rutinas-container{
-    margin-block: 2rem;
+    margin: 2rem;
     article{
         h2{
             font-size: 1.1rem;
@@ -19,7 +19,7 @@
         a {
             margin-block: .5rem;
            color: $font-color-tercera;
-           padding: 1rem;
+           padding: .7rem;
            border-radius: 100vmax;
            background-color: $links-color;
            &:hover{
