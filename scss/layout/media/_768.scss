@@ -3,6 +3,38 @@
         padding-block: 1rem;
     }
 
+    .index-rutinas-container {
+        article {
+            @include d-grid(1fr 1fr, 1rem);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "g1 g2"
+                "g4 g3";
+
+            margin: 2rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .g1 {
+                grid-area: g1;
+            }
+
+            .g2 {
+                grid-area: g2;
+            }
+
+            .g3 {
+                grid-area: g3;
+            }
+            .g4 {
+                grid-area: g4;
+            }
+        }
+    }
+
     .rutinas-container {
         width: 100%;
         .rutinas-cards {
@@ -17,7 +49,7 @@
 
     .rutinas-main-container {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1.3fr;
         margin: 1rem 2rem;
     }
 

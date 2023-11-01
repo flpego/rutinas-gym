@@ -1,19 +1,22 @@
 .rutinas-container {
     margin-block: 2rem;
     .rutinas-cards {
-        margin:  1rem auto;
+        margin: 1rem auto;
         @include card(100%, auto, 0, 100%, 300px, cover);
         h4 {
             color: $links-color;
             max-width: 95%;
-            font-size: 0.9rem;
+            font-size: 1.3rem;
             font-style: italic;
             height: auto;
             display: flex;
             flex-wrap: wrap;
         }
         p {
-            text-align: center
+            text-align: justify;
+            width: 90%;
+            font-size: .9rem;
+            font-weight: map-get($font-w, ligth);
         }
         @include hover-style;
 
@@ -22,8 +25,6 @@
         }
     }
 }
-
-
 
 .articulos-container {
     margin: 1rem;
@@ -52,4 +53,3 @@
         }
     }
 }
-

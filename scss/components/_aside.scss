@@ -1,29 +1,29 @@
-aside{
-   @include d-flex(column, wrap, flex-start, center, .5rem);
-   align-items: center;
-   width: 100%;
-   background-color: $bg-color-tercera;
-   margin: 2rem
-
+aside {
+    @include d-flex(column, wrap, flex-start, center, 0.5rem);
+    align-items: center;
+    width: 100%;
+    padding-block: 2rem;
 }
 
 .publicidad {
-
     @extend .social;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    border: solid 1px #e4cd00;
     p {
         padding: 1rem;
         width: 70%;
         text-align: center;
     }
     a {
-        padding: .5rem;
-        &:hover{
+        padding: 0.5rem;
+        box-shadow: 1px 1px 1px #e4cd00;
+        &:hover {
             border-bottom: 1px;
             box-shadow: 1px 1px 10px #e4cd00;
-
+            color: $font-color-primary;
         }
     }
     h4 {
@@ -33,24 +33,23 @@ aside{
 }
 
 .social {
-    
     ul {
         list-style: none;
-        
     }
 
     li {
-        margin: .5rem 1rem;
-        border-radius: 15px;
-        &:hover{
+        margin: 0.5rem 1rem;
+        border-radius: 1px;
+        box-shadow: 1px 1px 1px #e4cd00;
+
+        &:hover {
             border-bottom: 1px;
             box-shadow: 1px 1px 10px #e4cd00;
-
         }
     }
 
     i {
-        margin: .5rem 1rem;
+        margin: 0.5rem 1rem;
         color: $font-color-primary;
         font-size: 1rem;
     }
@@ -60,15 +59,13 @@ aside{
         font-size: 1rem;
         text-transform: uppercase;
         color: $links-color;
+        &:hover{  color: $font-color-primary;}
     }
 
-    h4{
+    h4 {
         margin-block: 1.5rem;
         text-align: center;
         font-size: 2rem;
         color: $font-color-primary;
-       }
-
-
-
+    }
 }

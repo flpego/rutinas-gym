@@ -54,6 +54,7 @@
     &:hover {
         border-bottom: 1px;
         box-shadow: 1px 1px 10px #e4cd00;
+        scale: 1.01;
     }
 }
 
@@ -77,6 +78,6 @@
 }
 
 @mixin box-shadow {
-    box-shadow: -1px -1px 10px #2e2e2e;
+    box-shadow: -1px -1px 10px #222222;
 }
 

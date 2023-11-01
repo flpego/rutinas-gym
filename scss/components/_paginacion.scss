@@ -1,5 +1,6 @@
 .paginacion-container {
     display: block;
+    margin: 1rem;
 
     .paginacion-list {
         @include d-flex(row, wrap, center, center, 1rem);

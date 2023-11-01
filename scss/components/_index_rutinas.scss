@@ -1,0 +1,43 @@
+.index-rutinas-container{
+    margin-block: 2rem;
+    article{
+        h2{
+            font-size: 1.1rem;
+            color: $font-color-secondary;
+            padding: .5rem;
+        }
+
+        p {
+            font-size: .9rem;
+            text-align: center;
+            width: 70%;
+            margin-block: 1rem;
+            letter-spacing: 0.9px;
+            font-weight: map-get($font-w, extra-ligth);
+        }
+
+        a {
+            margin-block: .5rem;
+           color: $font-color-tercera;
+           padding: 1rem;
+           border-radius: 100vmax;
+           background-color: $links-color;
+           &:hover{
+            font-weight: map-get($font-w, medium);
+            box-shadow: 1px 1px 10px $links-color;
+            color: $links-color;
+            background-color: $bg-color-secondary;
+           }
+        }
+
+        i {
+            margin-left: 8px;
+        }
+
+        img {
+         
+            border-radius: 100%;
+            box-shadow: 13px 10px 32px #000;
+        }
+    }
+}

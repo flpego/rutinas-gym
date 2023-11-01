@@ -1,6 +1,7 @@
 /*_variables y _mixins*/
 @import "./utilities/variables";
 @import "./utilities/maps";
+@import "./utilities/utilities";
 /*_base*/
 @import "./base/reset";
 @import "base/_typo.scss";
@@ -15,18 +16,19 @@
 @import "./layout/media/481_767";
 @import "./layout/media/768";
 /*_components*/
-@import "./components/buttons";
-@import "./components/titles";
 @import "./components/app-section.scss";
-@import "./components/rutinas_cards";
-@import "./components/hr";
-@import "./components/form";
-@import "./components/nosotros";
-@import "./components/filtrar";
-@import "./components/noticias";
-@import "./components/welcome";
-@import "./components/paginacion";
 @import "./components/aside";
+@import "./components/buttons";
+@import "./components/filtrar";
+@import "./components/form";
+@import "./components/hr";
+@import "./components/index_rutinas";
+@import "./components/noticias";
+@import "./components/nosotros";
+@import "./components/paginacion";
+@import "./components/rutinas_cards";
+@import "./components/titles";
+@import "./components/welcome";
 
 
 

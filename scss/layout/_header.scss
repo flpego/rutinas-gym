@@ -2,6 +2,7 @@
 
 header {
     font-family: $font-family;
+    font-weight: map-get($font-w, medium);
     @include flex;
     align-items: center;
     padding-block: .5rem;

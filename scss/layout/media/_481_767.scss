@@ -5,27 +5,36 @@
         align-items: center;
     }
 
+    .index-rutinas-container {
+        article {
+            @include d-flex(column, wrap, center, center, 1rem);
+            img {
+                width: 60%;
+            }
+        }
+    }
+
     .rutinas-container {
         width: 90%;
         margin: auto;
-        
+
         .rutinas-cards {
-            @include d-grid(1fr, .2rem);
+            @include d-grid(1fr, 0.2rem);
             width: 100%;
             margin: 1rem;
             p {
-                font-size: .9rem;
+                font-size: 0.9rem;
                 padding: 1rem;
                 font-weight: map-get($font-w, extra-ligth);
             }
-            button{
+            button {
                 margin-block: 1rem;
             }
         }
     }
 
-    aside{
-        display: none;
+    aside {
+        margin: 2rem 0;
     }
 
     .movil-container {

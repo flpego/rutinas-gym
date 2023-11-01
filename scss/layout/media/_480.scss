@@ -10,27 +10,35 @@
             @include d-flex(column, nowrap, center, flex-start, 1rem);
         }
     }
+    .index-rutinas-container {
+        article {
+            @include d-flex(column, wrap, center, center, 1rem);
+            img {
+                width: 60%;
+            }
+        }
+    }
 
     .rutinas-container {
         width: 90%;
         margin: auto;
-        
+
         .rutinas-cards {
-            @include d-grid(1fr, .3rem);
+            @include d-grid(1fr, 0.3rem);
             width: 100%;
             p {
-                font-size: .9rem;
-                padding: .5rem;
+                font-size: 0.9rem;
+                padding: 0.5rem;
                 font-weight: map-get($font-w, extra-ligth);
             }
-            button{
+            button {
                 margin-block: 1rem;
             }
         }
     }
 
-    aside{
-        display: none;
+    aside {
+        margin: 2rem 0;
     }
 
     .articulos-container {
@@ -42,10 +50,13 @@
     }
 
     .welcome {
-        h1,h2 {font-size: 1.5rem;}
+        h1,
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 
-    .inputs-container{
+    .inputs-container {
         width: 90%;
         flex-direction: column;
         input {
