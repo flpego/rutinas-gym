@@ -22,5 +22,11 @@ git clone https://github.com/flpego/rutinas-gym
 https://flpego.github.io/rutinas-gym/index.html
 
 ## Capturas
+Captura 1
+
+![screenshot1](https://github.com/flpego/rutinas-gym/blob/master/assets/images/screenshot1.png)
+Captura 2
+
+![screenshot2](https://github.com/flpego/rutinas-gym/blob/master/assets/images/screenshot2.png)
 
 
