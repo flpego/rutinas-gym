@@ -1,4 +1,4 @@
-@media #{map-get($breakpoints, md)}{
+@media #{map-get($breakpoints, md)} {
     header {
         display: flex;
         flex-direction: column;
@@ -6,26 +6,35 @@
     }
 
     .rutinas-container {
-        @include d-flex(row, wrap, center, flex-start, 1rem);
-        width: 95%;
+        width: 90%;
         margin: auto;
+        
         .rutinas-cards {
-            width: 45%;
+            @include d-grid(1fr, .2rem);
+            width: 100%;
+            margin: 1rem;
+            p {
+                font-size: .9rem;
+                padding: 1rem;
+                font-weight: map-get($font-w, extra-ligth);
+            }
+            button{
+                margin-block: 1rem;
+            }
         }
     }
 
-    .movil-container{
+    aside{
+        display: none;
+    }
 
+    .movil-container {
         @include d-grid(1fr, 1rem);
         align-items: center;
         justify-items: center;
-
-
-        
     }
 
     .articulos-container {
-  
         @include d-grid(1fr 1fr, 1rem);
         .articulos-cards {
             width: 100%;
@@ -33,7 +42,10 @@
     }
 
     .welcome {
-        h1,h2 {font-size: 2rem;}
+        h1,
+        h2 {
+            font-size: 2rem;
+        }
     }
 
     .inputs-container {
@@ -44,7 +56,7 @@
         }
     }
 
-    .form-container{
+    .form-container {
         width: 70%;
     }
 

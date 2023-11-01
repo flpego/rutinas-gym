@@ -12,12 +12,25 @@
     }
 
     .rutinas-container {
-        @include d-flex(column, nowrap, center, flex-start, 1rem);
         width: 90%;
         margin: auto;
+        
         .rutinas-cards {
+            @include d-grid(1fr, .3rem);
             width: 100%;
+            p {
+                font-size: .9rem;
+                padding: .5rem;
+                font-weight: map-get($font-w, extra-ligth);
+            }
+            button{
+                margin-block: 1rem;
+            }
         }
+    }
+
+    aside{
+        display: none;
     }
 
     .articulos-container {

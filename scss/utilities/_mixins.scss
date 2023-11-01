@@ -52,7 +52,8 @@
 
 @mixin hover-style {
     &:hover {
-        scale: 1.05;
+        border-bottom: 1px;
+        box-shadow: 1px 1px 10px #e4cd00;
     }
 }
 
@@ -75,4 +76,7 @@
     }
 }
 
+@mixin box-shadow {
+    box-shadow: -1px -1px 10px #2e2e2e;
+}
 

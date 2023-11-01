@@ -1,13 +1,14 @@
 .title {
   width: 90%;
-  margin:  auto;
+  margin: auto;
   height: fit-content;
   text-align: center;
-  font-size: 1.1rem;
-  color: #ffffff;
+  font-size: 1.2rem;
+
+  color: $font-color-primary;
   justify-content: center;
   padding-block: 1rem;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   strong {
     color: $font-color-secondary;
   }
@@ -15,7 +16,7 @@
   a {
     color: $links-color;
     letter-spacing: 2px;
-   
+
     &:hover {
       color: $font-color-secondary;
       text-decoration: underline;
@@ -33,5 +34,5 @@
 .parrafo {
   width: 99%;
   margin-bottom: 1rem;
-  font-weight:map-get($font-w, regular);
+  font-weight: map-get($font-w, regular);
 }

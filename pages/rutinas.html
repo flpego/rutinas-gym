@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Encuentra las mejores rutinas de gimnasio en RutinasGyM.com. Consejos de entrenamiento, planificaciones, metodologias de entrenamiento y más para lograr tus objetivos de fitness.">
-    <meta name="keywords" content="RutinasGyM.com">
-    <meta name="author" content="flavio pegoraro">
-    <meta name="copyright" content="flavio pegoraro SA">
+    <meta
+      name="description"
+      content="Encuentra las mejores rutinas de gimnasio en RutinasGyM.com. Consejos de entrenamiento, planificaciones, metodologias de entrenamiento y más para lograr tus objetivos de fitness."
+    />
+    <meta name="keywords" content="RutinasGyM.com" />
+    <meta name="author" content="flavio pegoraro" />
+    <meta name="copyright" content="flavio pegoraro SA" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="shortcut icon"
@@ -23,7 +26,7 @@
     <title>RutinasGyM.com | Rutninas</title>
   </head>
   <body class="bg-image">
-    <header>
+    <header class="flex">
       <div class="logo-container">
         <p class="logo">RutinasGyM.com</p>
       </div>
@@ -39,10 +42,11 @@
           <li><a href="./contacto.html">Contactanos</a></li>
 
           <li>
-            <a href="./pages/iniciar-sesion.html"
+            <a href="./iniciar-sesion.html"
               >Ingresar <i class="fa-solid fa-right-to-bracket"></i
             ></a>
           </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -62,169 +66,215 @@
             <hr />
           </div>
         </div>
-
-        <section>
-          <h4 class="special-title">Filtra tu busqueda</h4>
-          <form class="filtrar">
-            <select class="options">
-              <label for="grupo-muscular">Grupo Muscular:</label>
-              <option value="">Seleccione un grupo muscular</option>
-              <optgroup label="Superior">
-                <option value="hombros">Hombros</option>
-                <option value="espalda">Espalda</option>
-                <option value="pectorales">Pectorales</option>
-                <option value="brazos">Brazos</option>
-              </optgroup>
-              <optgroup label="Inferior">
-                <option value="piernas">Piernas</option>
-                <option value="abdominales">Abdominales</option>
-              </optgroup>
-            </select>
-            <select name="" id="">
-              <label for="grupo-muscular">Objetivo:</label>
-              <option value="">Objetivo</option>
-              <option value="">Hipertrofia</option>
-              <option value="">Fuerza Maxima</option>
-              <option value="">Cardio</option>
-              <option value="">Estiramientos</option>
-            </select>
-            <div class="input-buscar-container">
-              <input type="submit" value="Buscar" />
-              <span>🔍</span>
-            </div>
-          </form>
-        </section>
-
-        <div class="rutinas-main-container">
-
-          <h2 class="title">ULTIMOS PLANES DE ENTRENAMIENTO</h2>
-          <article>
-            <div>
-              <img
-              src="../assets/images/rutina1.jpg"
-              alt="hombre haciendo sentadillas con barra"
-            />
-            </div>
-            
-            <div>
-              <h4>Rutina de piernas para fuerza</h4>
-              <p>Descubre todo sobre los ejercicios concéntricos en nuestra guía completa. Aprende qué son y cómo contribuyen a tu desarrollo muscular y aumentan tu fuerza.</p>
-              <button class="btn">Ver rutina</button>
-            </div>
-
-          </article>
-
-          <article>
-            <div>
-              <img
-              src="../assets/images/rutina2.jpg"
-              alt="persona haciendo press banca con barra"
-            />
-            </div>
-            
-            <div>
-              <h4>Rutina de piernas para fuerza</h4>
-              <p>Descubre todo sobre los ejercicios concéntricos en nuestra guía completa. Aprende qué son y cómo contribuyen a tu desarrollo muscular y aumentan tu fuerza.</p>
-              <button class="btn">Ver rutina</button>
-            </div>
-
-          </article>
-
-          <article>
-            <div>
-              <img
-              src="../assets/images/rutina3.jpg"
-              alt="hombre haciendo sentadillas con barra"
-            />
-            </div>
-            
-            <div>
-              <h4>Rutina de piernas para fuerza</h4>
-              <p>Descubre todo sobre los ejercicios concéntricos en nuestra guía completa. Aprende qué son y cómo contribuyen a tu desarrollo muscular y aumentan tu fuerza.</p>
-              <button class="btn">Ver rutina</button>
-            </div>
-
-          </article>
-
-
-
-
-        </div>
-        <button class="btn flex-center"><a href="#">Cargar mas ➕</a></button>
+        <h2 class="title">Todas las rutinas</h2>
       </section>
-      <div class="hr-container">
-        <hr />
-      </div>
+
       <section>
-        <h2 class="title">Rutinas por grupo muscular</h2>
-        <div class="rutinas-container">
-          <article class="rutinas-cards">
-            <img
-              src="../assets/images/rutina1.jpg"
-              alt="hombre haciendo sentadillas con barra"
-            />
-            <h4 class="title">Rutina de piernas para fuerza</h4>
-            <button class="btn">Ver rutina</button>
-          </article>
-
-          <article class="rutinas-cards">
-            <img
-              src="../assets/images/rutina3.jpg"
-              alt="persona haciendo peso muerto con barra"
-            />
-            <h4 class="title">Rutina Torso - Piernas</h4>
-            <button class="btn">Ver rutina</button>
-          </article>
-
-          <article class="rutinas-cards">
-            <img
-              src="../assets/images/rutina2.jpg"
-              alt="persona haciendo press banca con barra"
-            />
-            <h4 class="title">Rutina Full Body para ganar masa muscular</h4>
-            <button class="btn">Ver rutina</button>
-          </article>
-        </div>
-        <button class="btn flex-center"><a href="#">Cargar mas ➕</a></button>
+        <h4 class="special-title">Filtra tu busqueda</h4>
+        <form class="filtrar">
+          <select class="options">
+            <label for="grupo-muscular">Grupo Muscular:</label>
+            <option value="">Todas las rutinas</option>
+            <optgroup label="Tren Superior">
+              <option value="hombros">Hombros</option>
+              <option value="espalda">Espalda</option>
+              <option value="pectorales">Pectorales</option>
+              <option value="brazos">Brazos</option>
+            </optgroup>
+            <optgroup label="Tren Inferior">
+              <option value="piernas">Piernas</option>
+              <option value="abdominales">Abdominales</option>
+            </optgroup>
+          </select>
+          <select name="" id="">
+            <label for="grupo-muscular">Objetivo:</label>
+            <option value="">Objetivo</option>
+            <option value="">Hipertrofia</option>
+            <option value="">Fuerza Maxima</option>
+            <option value="">Cardio</option>
+            <option value="">Estiramientos</option>
+          </select>
+          <div class="input-buscar-container">
+            <input type="submit" value="Buscar" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
       </section>
-      <div class="hr-container">
-        <hr />
+
+      <div class="rutinas-main-container">
+        <div>
+          <section>
+            <div class="rutinas-container">
+              <article class="rutinas-cards">
+                <img
+                  src="../assets/images/rutina1.jpg"
+                  alt="hombre haciendo sentadillas con barra"
+                />
+                <div>
+                  <h4 class="title">Rutina de piernas para fuerza</h4>
+                  <p>
+                    Esta rutina de piernas te ayudará a desarrollar fuerza y
+                    resistencia en tus piernas. Incluye ejercicios como
+                    sentadillas y estocadas para fortalecer tus músculos y
+                    mejorar tu rendimiento.
+                  </p>
+                  <button class="btn">Ver rutina</button>
+                </div>
+              </article>
+
+              <article class="rutinas-cards">
+                <img
+                  src="../assets/images/rutina3.jpg"
+                  alt="persona haciendo peso muerto con barra"
+                />
+                <div>
+                  <h4 class="title">Rutina Torso - Piernas</h4>
+                  <p>
+                    La rutina Torso - Piernas es perfecta para aquellos que
+                    buscan un entrenamiento equilibrado. Combina ejercicios para
+                    la parte superior del cuerpo y las piernas, lo que te
+                    ayudará a mejorar tu fuerza y forma física en general.
+                  </p>
+                  <button class="btn">Ver rutina</button>
+                </div>
+              </article>
+
+              <article class="rutinas-cards">
+                <img
+                  src="../assets/images/rutina2.jpg"
+                  alt="persona haciendo press banca con barra"
+                />
+                <div>
+                  <h4 class="title">
+                    Rutina Full Body para ganar masa muscular
+                  </h4>
+                  <p>
+                    Si tu objetivo es ganar masa muscular en todo el cuerpo,
+                    esta rutina Full Body es la elección adecuada. Incluye
+                    ejercicios compuestos que trabajan múltiples grupos
+                    musculares para obtener resultados óptimos.
+                  </p>
+                  <button class="btn">Ver rutina</button>
+                </div>
+              </article>
+              <article class="rutinas-cards">
+                <img
+                  src="../assets/images/rutina1.jpg"
+                  alt="hombre haciendo sentadillas con barra"
+                />
+                <div>
+                  <h4 class="title">Rutina de piernas para fuerza</h4>
+                  <p>
+                    Esta rutina de piernas te ayudará a desarrollar fuerza y
+                    resistencia en tus piernas. Incluye ejercicios como
+                    sentadillas y estocadas para fortalecer tus músculos y
+                    mejorar tu rendimiento.
+                  </p>
+                  <button class="btn">Ver rutina</button>
+                </div>
+              </article>
+
+              <article class="rutinas-cards">
+                <img
+                  src="../assets/images/rutina3.jpg"
+                  alt="persona haciendo peso muerto con barra"
+                />
+                <div>
+                  <h4 class="title">Rutina Torso - Piernas</h4>
+                  <p>
+                    La rutina Torso - Piernas es perfecta para aquellos que
+                    buscan un entrenamiento equilibrado. Combina ejercicios para
+                    la parte superior del cuerpo y las piernas, lo que te
+                    ayudará a mejorar tu fuerza y forma física en general.
+                  </p>
+                  <button class="btn">Ver rutina</button>
+                </div>
+              </article>
+
+              <article class="rutinas-cards">
+                <img
+                  src="../assets/images/rutina2.jpg"
+                  alt="persona haciendo press banca con barra"
+                />
+                <div>
+                  <h4 class="title">
+                    Rutina Full Body para ganar masa muscular
+                  </h4>
+                  <p>
+                    Si tu objetivo es ganar masa muscular en todo el cuerpo,
+                    esta rutina Full Body es la elección adecuada. Incluye
+                    ejercicios compuestos que trabajan múltiples grupos
+                    musculares para obtener resultados óptimos.
+                  </p>
+                  <button class="btn">Ver rutina</button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <div class="paginacion-container">
+              <ul class="paginacion-list">
+                <li>
+                  <a href="#"><</a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <aside>
+          <div class="publicidad">
+            <h4>Suscribite a nuestro contenido premiun</h4>
+            <p>50% de descuento en tu primer mes</p>
+            
+              <a href="#"><i class="fa-solid fa-user-plus"></i>Suscribite</a>
+            
+          </div>
+          <div class="social">
+            <h4>Siguenos</h4>
+            <ul>
+              <li>
+                <a href="../index.html">
+                  <i class="fa-solid fa-house"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i>Facebook </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-square-x-twitter"></i>twitter / X
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-square-instagram"></i>instagram
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
       </div>
-      <section>
-        <h2 class="title">Rutinas por categorias</h2>
-        <div class="rutinas-container">
-          <article class="rutinas-cards">
-            <img
-              src="../assets/images/rutina1.jpg"
-              alt="hombre haciendo sentadillas con barra"
-            />
-            <h4 class="title">Rutina de piernas para fuerza</h4>
-            <button class="btn">Ver rutina</button>
-          </article>
-
-          <article class="rutinas-cards">
-            <img
-              src="../assets/images/rutina3.jpg"
-              alt="persona haciendo peso muerto con barra"
-            />
-            <h4 class="title">Rutina Torso - Piernas</h4>
-            <button class="btn">Ver rutina</button>
-          </article>
-
-          <article class="rutinas-cards">
-            <img
-              src="../assets/images/rutina2.jpg"
-              alt="persona haciendo press banca con barra"
-            />
-            <h4 class="title">Rutina Full Body para ganar masa muscular</h4>
-            <button class="btn">Ver rutina</button>
-          </article>
-        </div>
-        <button class="m-1 btn flex-center">
-          <a href="#">Cargar mas ➕</a>
-        </button>
-      </section>
     </main>
+
     <footer>
       <div class="logo-container">
         <p class="logo">RutinasGyM.com</p>
@@ -232,10 +282,10 @@
       <div>
         <ul class="footer-list">
           <h2>Ayuda</h2>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
           <li><a href="#">Politica de cookies</a></li>
           <li>
-            <a href="./pages/nosotros.html">Quiénes somos</a>
+            <a href="./nosotros.html">Quiénes somos</a>
           </li>
           <li>
             <a href="#">Acceso a la plataforma</a>
@@ -248,7 +298,7 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="footer-list-icons-container">
         <h2>Siguenos</h2>
         <ul class="footer-list-icons">

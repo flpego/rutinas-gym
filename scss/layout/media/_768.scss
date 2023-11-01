@@ -1,10 +1,24 @@
 @media #{map-get($breakpoints, lg)} {
+    header {
+        padding-block: 1rem;
+    }
+
     .rutinas-container {
-        @include d-flex(row, wrap, center, flex-start, 1rem);
         width: 100%;
         .rutinas-cards {
-            width: 30%;
+            margin: 2rem;
+            @include d-grid(1.5fr 2fr, 1rem);
+            width: 29%;
+            button {
+                margin-block-start: 3rem;
+            }
         }
+    }
+
+    .rutinas-main-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin: 1rem 2rem;
     }
 
     .movil-container {
@@ -14,21 +28,23 @@
     }
 
     .articulos-container {
-        @include d-grid(1fr 1fr 1fr, 1rem);
+        @include d-grid(1fr 1fr 1fr, 1.5rem);
         .articulos-cards {
             width: 100%;
         }
     }
 
     .welcome {
-        h1,h2 {font-size: 2rem;}
+        h1,
+        h2 {
+            font-size: 2rem;
+        }
     }
 
-    .noticias{
+    .noticias {
         p {
             width: 60%;
         }
-
     }
     .inputs-container {
         width: 90%;

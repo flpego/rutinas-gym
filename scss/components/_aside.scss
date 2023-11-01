@@ -1,0 +1,74 @@
+aside{
+   @include d-flex(column, wrap, flex-start, center, .5rem);
+   align-items: center;
+   width: 100%;
+   background-color: $bg-color-tercera;
+   margin: 2rem
+
+}
+
+.publicidad {
+
+    @extend .social;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        padding: 1rem;
+        width: 70%;
+        text-align: center;
+    }
+    a {
+        padding: .5rem;
+        &:hover{
+            border-bottom: 1px;
+            box-shadow: 1px 1px 10px #e4cd00;
+
+        }
+    }
+    h4 {
+        width: 90%;
+        font-weight: map-get($font-w, extra-ligth);
+    }
+}
+
+.social {
+    
+    ul {
+        list-style: none;
+        
+    }
+
+    li {
+        margin: .5rem 1rem;
+        border-radius: 15px;
+        &:hover{
+            border-bottom: 1px;
+            box-shadow: 1px 1px 10px #e4cd00;
+
+        }
+    }
+
+    i {
+        margin: .5rem 1rem;
+        color: $font-color-primary;
+        font-size: 1rem;
+    }
+
+    a {
+        margin: 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $links-color;
+    }
+
+    h4{
+        margin-block: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: $font-color-primary;
+       }
+
+
+
+}
