@@ -1103,7 +1103,6 @@ aside {
   background-image: url(../../assets/images/welcome.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  image-rendering: optimizeQuality;
   height: 400px;
   justify-content: center;
   align-items: center;
