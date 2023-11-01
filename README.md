@@ -13,7 +13,7 @@ Podras interactuar con la mayotia de los enlaces y botones dentro de las paginas
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local:
+1. Clona este repositorio en tu máquina local y abre el archivo index.html, o inicia un servidor con live server:
    
 git clone https://github.com/flpego/rutinas-gym
 
