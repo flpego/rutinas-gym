@@ -5,6 +5,13 @@
 El siguiente repositorio contiene el codigo en html y css necesario para visualizar el front de un sitio web sobre rutianas de gimnasio. Es un sitio puramente visual, donde la interaccion se limita a la navegacion por las paginas y a algunas animaciones en links, botones y cards.
 Podras interactuar con la mayotia de los enlaces y botones dentro de las paginas, ademas el sitio cuenta con secciones para registrarse, loguearse, contactar al propietaria, etc.
 
+<h4>Tecnologias implementadas</h4>
+<ul>
+   <li>HTML 5</li>
+   <li>Procesador de CSS: SASS CSS</li>
+   <li>Optimizacion SEO</li>
+</ul>
+
 ## Contenido
 
 - [Instalación](#instalación)
